@@ -29,6 +29,15 @@ public class Main {
             }
             System.out.println();
         }
+
+        LinkedList linkedList = new LinkedList();
+        linkedList.append(3);
+        linkedList.append(5);
+        linkedList.append(7);
+        linkedList.append(9);
+        linkedList.print();
+        linkedList.reverse();
+        linkedList.print();
     }
 
     public static void rotateSquareMatrix90(int[][] matrix) {
