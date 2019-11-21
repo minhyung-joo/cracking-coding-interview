@@ -38,6 +38,17 @@ public class Main {
         linkedList.print();
         linkedList.reverse();
         linkedList.print();
+
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.insert(5);
+        binaryTree.insert(3);
+        binaryTree.insert(15);
+        binaryTree.insert(9);
+        binaryTree.insert(1);
+        binaryTree.insert(12);
+        binaryTree.insert(11);
+        binaryTree.insert(8);
+        binaryTree.print();
     }
 
     public static void rotateSquareMatrix90(int[][] matrix) {
