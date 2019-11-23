@@ -50,6 +50,8 @@ public class Main {
         binaryTree.insert(8);
         binaryTree.print();
 
+        binaryTree.reverse().print();
+
         NewtonMethod nm = new NewtonMethod();
         System.out.println(nm.squareRoot(10000));
     }

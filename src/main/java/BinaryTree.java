@@ -1,10 +1,16 @@
+class Node {
+    Node left;
+    Node right;
+    int data;
+}
+
 public class BinaryTree {
     private Node root;
 
-    private class Node {
-        Node left;
-        Node right;
-        int data;
+    public BinaryTree() {}
+
+    public BinaryTree(Node root) {
+        this.root = root;
     }
 
     public void insert(int data) {
@@ -127,5 +133,25 @@ public class BinaryTree {
         }
 
         System.out.print(sb.toString());
+    }
+
+    public BinaryTree reverse() {
+        Node newRoot = new Node();
+        newRoot.data = root.data;
+        newRoot.left = reverse(root.right);
+        newRoot.right = reverse(root.left);
+        return new BinaryTree(newRoot);
+    }
+
+    public Node reverse(Node node) {
+        if (node == null) {
+            return null;
+        }
+
+        Node newNode = new Node();
+        newNode.data = node.data;
+        newNode.left = reverse(node.right);
+        newNode.right = reverse(node.left);
+        return newNode;
     }
 }
