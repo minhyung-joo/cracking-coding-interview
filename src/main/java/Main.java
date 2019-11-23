@@ -49,6 +49,9 @@ public class Main {
         binaryTree.insert(11);
         binaryTree.insert(8);
         binaryTree.print();
+
+        NewtonMethod nm = new NewtonMethod();
+        System.out.println(nm.squareRoot(10000));
     }
 
     public static void rotateSquareMatrix90(int[][] matrix) {
