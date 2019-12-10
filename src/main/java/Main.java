@@ -54,6 +54,10 @@ public class Main {
 
         NewtonMethod nm = new NewtonMethod();
         System.out.println(nm.squareRoot(10000));
+
+        String s1 = "AGGTAB";
+        String s2 = "GXTXAYB";
+        System.out.printf("Length of LCS between %s and %s is %d", s1, s2, LongestCommonSubsequence.longestCommonSubsequence(s1, s2));
     }
 
     public static void rotateSquareMatrix90(int[][] matrix) {
