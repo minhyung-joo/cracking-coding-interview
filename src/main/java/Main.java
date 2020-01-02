@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         int[][] matrix = {
@@ -57,7 +59,34 @@ public class Main {
 
         String s1 = "AGGTAB";
         String s2 = "GXTXAYB";
-        System.out.printf("Length of LCS between %s and %s is %d", s1, s2, LongestCommonSubsequence.longestCommonSubsequence(s1, s2));
+        System.out.printf("Length of LCS between %s and %s is %d\n", s1, s2, LongestCommonSubsequence.longestCommonSubsequence(s1, s2));
+
+        int[] arr = { 7, 5, 8, 2, 3, 1, 9, 12 };
+        int[] arr2 = { 3, 3, 3, 2, 2, 5, 5 };
+        int[] arr3 = Arrays.copyOf(arr, arr.length);
+        int[] arr4 = Arrays.copyOf(arr2, arr2.length);
+        Sort.quicksort(arr);
+        Sort.quicksort(arr2);
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        for (int i : arr2) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        Sort.mergesort(arr3);
+        for (int i : arr3) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        Sort.mergesort(arr4);
+        for (int i : arr4) {
+            System.out.print(i + " ");
+        }
     }
 
     public static void rotateSquareMatrix90(int[][] matrix) {
