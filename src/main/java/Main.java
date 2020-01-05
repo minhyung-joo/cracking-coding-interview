@@ -87,6 +87,11 @@ public class Main {
         for (int i : arr4) {
             System.out.print(i + " ");
         }
+        System.out.println();
+
+        String str = "ABC ABCDAB ABCDABCDABDE";
+        String pattern = "ABCDABD";
+        System.out.println(Search.kmp(str, pattern));
     }
 
     public static void rotateSquareMatrix90(int[][] matrix) {
