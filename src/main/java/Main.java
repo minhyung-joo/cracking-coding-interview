@@ -92,6 +92,7 @@ public class Main {
         String str = "ABC ABCDAB ABCDABCDABDE";
         String pattern = "ABCDABD";
         System.out.println(Search.kmp(str, pattern));
+        System.out.println(Search.rabinKarp(str, pattern));
     }
 
     public static void rotateSquareMatrix90(int[][] matrix) {
