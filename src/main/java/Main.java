@@ -1,3 +1,5 @@
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 import java.util.Arrays;
 
 public class Main {
@@ -93,6 +95,11 @@ public class Main {
         String pattern = "ABCDABD";
         System.out.println(Search.kmp(str, pattern));
         System.out.println(Search.rabinKarp(str, pattern));
+
+        int[] values = { 60, 100, 120 };
+        int[] weights = { 10, 20, 30 };
+        System.out.println(Knapsack.knapsackRecursive(50, weights, values, values.length));
+        System.out.println(Knapsack.knapsack(50, weights, values));
     }
 
     public static void rotateSquareMatrix90(int[][] matrix) {
